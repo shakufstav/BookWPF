@@ -1,0 +1,35 @@
+﻿<Page x:Class="WPF.RecommendBook"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" Background="LightPink"
+      Title="RecommendBook">
+    <Grid>
+        
+            
+        
+        <TextBlock Grid.Row="0"
+    HorizontalAlignment="Center"
+    VerticalAlignment="Top"
+    FontSize="40"
+    FontStyle="Italic"
+    Text="---הספרים המומלצים ביותר---" Width="550" Height="60" />
+
+        <TextBlock Text="The selection" FontSize="20" FontStyle="Italic" Margin="96,328,586,92"> </TextBlock>
+         <Image Source="/MyImages/The_Selection.jpg" Height="195" Width="147" Stretch="Fill" MouseLeftButtonDown="NavToTheSelection" Margin="81,128,572,128"  />
+        <Rectangle Margin="66,116,559,77"  StrokeThickness="2" Stroke="Black" />
+
+        <TextBlock Text="Fourth wing" FontSize="20" FontStyle="Italic" Margin="349,328,343,92"></TextBlock>
+        <Image Source="/MyImages/fourth wing.jpg" Height="195" Width="147" Stretch="Fill" MouseLeftButtonDown="NavToFourthWing" Margin="326,128,326,127"  />
+        <Rectangle Margin="312,116,312,77"  StrokeThickness="2" Stroke="Black" />
+
+        <TextBlock Text="It ends with us" FontSize="20" FontStyle="Italic" Margin="583,328,91,92"/>
+        <Image Source="/MyImages/it ends with us.jpg" Height="195" Width="147" Stretch="Fill" MouseLeftButtonDown="NavToItEndsWithUs" Margin="570,128,84,128"  />
+        <Rectangle Margin="555,116,69,77"  StrokeThickness="2" Stroke="Black" />
+
+
+    </Grid>
+</Page>

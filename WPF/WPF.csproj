@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\project backround.jpg" />
+    <None Remove="MyImages\BookOfTheWeekBackround.jpg" />
+    <None Remove="MyImages\fourth wing.jpg" />
+    <None Remove="MyImages\homeBackroundfProject.jpg" />
+    <None Remove="MyImages\it ends with us.jpg" />
+    <None Remove="MyImages\One of us is lying.jpg" />
+    <None Remove="MyImages\project backround.jpg" />
+    <None Remove="MyImages\The summer i turnd pretty.jpg" />
+    <None Remove="MyImages\The_Selection.jpg" />
+    <None Remove="MyImages\twisted love.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2210.55" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="API_service">
+      <HintPath>..\..\..\..\Downloads\BookProjectSTAV\APIservice\bin\Debug\net7.0\API_service.dll</HintPath>
+    </Reference>
+    <Reference Include="Model">
+      <HintPath>..\..\..\..\Downloads\BookProjectSTAV\APIservice\bin\Debug\net7.0\Model.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MyImages\BookOfTheWeekBackround.jpg" />
+    <Resource Include="MyImages\fourth wing.jpg" />
+    <Resource Include="MyImages\homeBackroundfProject.jpg" />
+    <Resource Include="MyImages\it ends with us.jpg" />
+    <Resource Include="MyImages\One of us is lying.jpg" />
+    <Resource Include="MyImages\project backround.jpg" />
+    <Resource Include="MyImages\The summer i turnd pretty.jpg" />
+    <Resource Include="MyImages\The_Selection.jpg" />
+    <Resource Include="MyImages\twisted love.jpg" />
+  </ItemGroup>
+
+</Project>
